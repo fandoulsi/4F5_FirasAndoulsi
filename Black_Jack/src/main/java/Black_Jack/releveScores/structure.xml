@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Copyright (C) (2020) (Mathieu Bergeron) (mathieu.bergeron@cmontmorency.qc.ca)
+//
+// This file is part of tutoriels4f5
+//
+// tutoriels4f5 is free software: you can redistribute it and/or modify
+// it under the terms of the GNU Affero General Public License as published by
+// the Free Software Foundation, either version 3 of the License, or
+// (at your option) any later version.
+//
+// tutoriels4f5 is distributed in the hope that it will be useful,
+// but WITHOUT ANY WARRANTY; without even the implied warranty of
+// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+// GNU Affero General Public License for more details.
+//
+// You should have received a copy of the GNU Affero General Public License
+// along with aquiletour.  If not, see <https://www.gnu.org/licenses/> -->
+
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Text?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ComboBox?>
+
+<VBox xmlns:fx="http://javafx.com/fxml" alignment="CENTER"
+    fx:controller="Black_Jack.releveScores.page_releve_scores.VueReleveScores">
+
+	<VBox>
+
+		<Text fx:id="Joueur"></Text><Text text="Au cours de la dernière partie;"></Text><Text text="Vous avec GAGNER ---------- 0 fois"></Text><Text text="Vous avez PERDU ---------- 0 fois"></Text><Text text=""></Text><HBox alignment="center">
+			<Text textAlignment="center" text="Numero du joueur :"/>
+			</HBox>
+
+		<VBox>
+				<HBox alignment="center"><Text text="Joueur 1"></Text>
+					<CheckBox fx:id="checkJoueur1"/>
+					</HBox>
+
+				<HBox alignment="center">
+					<Text text="Joueur 2"></Text><CheckBox fx:id="checkJoueur2"/>
+					</HBox>
+
+		</VBox>
+		</VBox>
+
+	<HBox alignment="center">
+		<Button text="Retour" fx:id="boutonTerminer"/>
+	</HBox></VBox>

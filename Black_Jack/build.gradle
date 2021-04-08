@@ -4,7 +4,7 @@ plugins {
 
 task page_releve_scores (type:JavaExec) {
      dependsOn 'classes'
-     main = 'Black_Jack.page_releve_scores.page_releve_scores'
+     main = 'Black_Jack.releveScores.page_releve_scores.page_releve_scores'
      classpath = sourceSets.main.runtimeClasspath
      jvmArgs('-Dfile.encoding=UTF-8', '-Duser.language=fr')
 }
