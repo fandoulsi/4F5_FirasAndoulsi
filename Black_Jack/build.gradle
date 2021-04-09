@@ -8,3 +8,17 @@ task page_releve_scores (type:JavaExec) {
      classpath = sourceSets.main.runtimeClasspath
      jvmArgs('-Dfile.encoding=UTF-8', '-Duser.language=fr')
 }
+
+dependencies {
+     // Websocket
+     // https://github.com/TooTallNate/Java-WebSocket
+     implentation 'org.java-websocket:Java-WebSocket:1.4.0'
+}
+
+task Black_JackServeur (type:JavaExec) {
+     dependsOn 'classes'
+     main = 'Black_Jack.Serveur.MonServeur'
+     classpath = sourceSets.main.runtimeClasspath
+     standardInput = System.in
+     jvmArgs('-Dfile.encoding=UTF-8', '-Duser.language=fr')
+}
