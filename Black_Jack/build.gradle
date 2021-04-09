@@ -12,7 +12,7 @@ task page_releve_scores (type:JavaExec) {
 dependencies {
      // Websocket
      // https://github.com/TooTallNate/Java-WebSocket
-     implentation 'org.java-websocket:Java-WebSocket:1.4.0'
+     implementation'org.java-websocket:Java-WebSocket:1.4.0'
 }
 
 task Black_JackServeur (type:JavaExec) {

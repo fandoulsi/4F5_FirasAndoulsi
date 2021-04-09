@@ -5,7 +5,7 @@ public class Constantes {
 		
 		public static final String ID_MODELE_PAR_DEFAUT = "defaut";
 		
-		public static final String CHEMIN_RELEVESCORES_FXML = "/Black_Jack/releveScores/structure.xml";
+		public static final String CHEMIN_RELEVESCORES_FXML = "/releveScores/structure.xml";
 		
 		public static final int PORT = 8765;
 		public static final String ADRESSE_SERVEUR = String.format("ws://localhost:%s", PORT);

@@ -12,6 +12,8 @@ import Black_Jack.releveScores.commandes.choisir_joueur.ChoisirJoueur;
 import Black_Jack.releveScores.commandes.choisir_joueur.ChoisirJoueurPourEnvoi;
 import Black_Jack.releveScores.commandes.fermer_releveScores.FermerReleveScores;
 import Black_Jack.releveScores.commandes.fermer_releveScores.FermerReleveScoresPourEnvoi;
+import Black_Jack.releveScores.messages.transmettre_choisir_joueur.MsgTransmettreChoisirJoueur;
+import Black_Jack.releveScores.messages.transmettre_choisir_joueur.MsgTransmettreChoisirJoueurPourEnvoi;
 import Black_Jack.releveScores.commandes.obtenir_scores.ObtenirScore;
 import Black_Jack.releveScores.commandes.obtenir_scores.ObtenirScorePourEnvoi;
 import Black_Jack.releveScores.enumerations.NumeroJoueur;
@@ -33,6 +35,7 @@ public class VueReleveScores implements Vue, Initializable{
 	private FermerReleveScoresPourEnvoi fermerReleveScores;
 	private ChoisirJoueurPourEnvoi choisirJoueur;
 	private ResulatsPartiePrecedent resultats;
+	private MsgTransmettreChoisirJoueurPourEnvoi joueurChoix;
 	
 	@FXML
 	private Text Joueur;
@@ -65,6 +68,9 @@ public class VueReleveScores implements Vue, Initializable{
 				
 				choisirJoueur.setNumeroJoueur(NumeroJoueur.JOUEUR1);
 				choisirJoueur.envoyerCommande();
+				joueurChoix.setNumeroJoueur(NumeroJoueur.JOUEUR1);
+				joueurChoix.envoyerMessage();
+				
 			}
 		});
 		
@@ -75,6 +81,8 @@ public class VueReleveScores implements Vue, Initializable{
 
 				choisirJoueur.setNumeroJoueur(NumeroJoueur.JOUEUR2);
 				choisirJoueur.envoyerCommande();
+				joueurChoix.setNumeroJoueur(NumeroJoueur.JOUEUR2);
+				joueurChoix.envoyerMessage();
 			}
 		});
 
